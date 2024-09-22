@@ -20,16 +20,16 @@ The Terraform configuration is set up to run in Terraform Cloud.
 ```hcl
 terraform {
   cloud {
-    organization = "sammielas"
+    organization = "your-organization-name"
 
     workspaces {
-      name = "devops_aws_my_dev"
+      name = "your-workspace-name"
     }
   }
 }
 ```
 
-The workspace `devops_aws_my_dev` is used for managing this infrastructure within the `sammielas` organization on Terraform Cloud.
+The workspace `your-workspace-name` is used for managing this infrastructure within the `your=organization-name` organization on Terraform Cloud.
 
 ## Prerequisites
 
@@ -82,7 +82,7 @@ Example:
 
 ```hcl
 region          = "us-east-1"
-project_name    = "matrimony"
+project_name    = "your-project-name"
 vpc_cidr        = "10.0.0.0/16"
 pub_sub_1a_cidr = "10.0.1.0/24"
 pub_sub_2b_cidr = "10.0.2.0/24"
